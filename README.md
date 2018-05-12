@@ -67,13 +67,13 @@ name=mp maskType=twoview   loss_xyz=1 loadOpt=rgbpns  Gtype_in=rgbpns   Gtype_ou
 |rgb     | pns       | rgbpns    |
 
 0. Supported mask types (maskType):\
-twoview: Input two views of the panorama and predicts the other two. \
+twoview: Input two views of the panorama and predicts the other two. (a)\
+1camera: one normnal camera (b)\
+3camera: three normnal camera (c)\
+middlecamera: Input six RGB-D camera looking horizantoally forward (d)\
+upcamera: Input six RGB-D camera looking upwards (e) \
 random: random mask \
-upcamera: Input six RGB-D camera looking upwards (a)\
-middlecamera: Input six RGB-D camera looking horizantoally forward (b)\
-1camera: one normnal camera \
-3camera: two normnal camera \
-nomask: No mask applied in the input image. Example usage, input rgb panorama output pns.\
+nomask: No mask applied in the input image. Example usage, input rgb panorama output pns.(f)\
 
 ![camera_config_image](image/camera_config_image.jpg)
 
