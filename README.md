@@ -32,7 +32,7 @@ luarocks make hdf5-0-0.rockspec LIBHDF5_LIBDIR="/usr/lib/x86_64-linux-gnu/"
 
 ### Download
 0. Dwonload training and testing panorama data: ./download_pano_data.sh [41 G]
-
+0. Dwonload models: ./download_models.sh [1.7 G]
 
 ### Training  
 
@@ -89,8 +89,9 @@ Testing with pre-trained models:
 name=mpft_suncg_pns_pns_twoview  maskType=twoview dataset=suncg dataPath=../data/suncgpano/  checkpoints_dir=../models DATA_ROOT=../datalist/testlist_suncgroom8.txt how_many=480 th test.lua
 ```
 
-### Data Details 
+### Data Details:
 
+(TODO)
 Panorama data representation
 
 
