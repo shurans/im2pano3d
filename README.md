@@ -90,7 +90,8 @@ name=mpft_suncg_pns_pns_twoview  maskType=twoview dataset=suncg dataPath=../data
 ```
 
 ### Depth encoding conversion
-See `./matlab_code/pano_io/pano_demo.m`
+See `./matlab_code/pano_io/pano_demo.m`. 
+It shows how to read the depth data and convert it into 3D point cloud.
 
 
 
