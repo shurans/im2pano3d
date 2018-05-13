@@ -1,4 +1,5 @@
 function vis_result(foldername,subfoldername,path2checkpoint,ratio,autoexit, seg_only, save_visual)
+% save visulization images of output 
 dbstop if error
 addpath('./utils/');
 addpath('./emd/');
@@ -222,7 +223,6 @@ for i = 1:length(allnamaes)
     
     fprintf(fid, '%d %s <br>\n',i, allnamaes{i});
     fprintf(fid, '<br>\n');
-    fprintf(fid, 'depth diff: %f\n', eval(i).sm_dis_error(1)); 
     fprintf(fid, '<br>\n');
     fprintf(fid, '<br>\n');
 end
