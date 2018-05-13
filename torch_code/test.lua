@@ -217,10 +217,9 @@ net = nil
 
 local cmd 
 if opt.loadOpt == 's' then 
-  cmd = 'cd ../matlab_code; matlab -nosplash -nodesktop -nodisplay -r \"vis_result(\''..opt.name..'\',\''.. opt.dataset ..'\',\''..opt.maskangle..'\',1,1)\"'
+  cmd = 'cd ../matlab_code; matlab -nosplash -nodesktop -nodisplay -r \"vis_result(\''..opt.name..'\',\''.. opt.dataset ..'\',\''.. opt.checkpoints_dir ..'\',\''..opt.maskangle..'\',1,1)\"'
 else
-  cmd = 'cd ../matlab_code; matlab -nosplash -nodesktop -nodisplay -r \"vis_result(\''..opt.name..'\',\''.. opt.dataset ..'\',\''..opt.maskangle..'\',1,0)\"'
+  cmd = 'cd ../matlab_code; matlab -nosplash -nodesktop -nodisplay -r \"vis_result(\''..opt.name..'\',\''.. opt.dataset ..'\',\''.. opt.checkpoints_dir ..'\',\''..opt.maskangle..'\',1,0)\"'
 end
 print(cmd)
 os.execute(cmd)
-os.execute('cd /n/fs/modelnet/roomEncoder/context-encoder')

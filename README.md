@@ -89,13 +89,9 @@ Testing with pre-trained models:
 name=mpft_suncg_pns_pns_twoview  maskType=twoview dataset=suncg dataPath=../data/suncgpano/  checkpoints_dir=../models DATA_ROOT=../datalist/testlist_suncgroom8.txt how_many=480 th test.lua
 ```
 
-### Data Details:
+### Depth encoding conversion
+See `./matlab_code/pano_io/pano_demo.m`
 
-(TODO)
-Panorama data representation
-
-
-Depth encoding conversion example in Matlab
 
 
 ### Acknowledgment
