@@ -7,7 +7,7 @@ More information about the project can be found in our [paper](https://arxiv.org
 ![teaser](image/teaser.jpg)
 
 ### Organization
-The code and data is organized as follows:
+The code and data are organized as follows:
 ``` shell
     im2pano3d
          |-- matlab_code
@@ -68,8 +68,8 @@ name=mp maskType=twoview   loss_xyz=1 loadOpt=rgbpns  Gtype_in=rgbpns   Gtype_ou
 
 0. Supported mask types (maskType):\
 twoview: Input two views of the panorama and predicts the other two. (a)\
-1camera: one normnal camera (b)\
-3camera: three normnal camera (c)\
+1camera: one normal camera (b)\
+3camera: three normal cameras (c)\
 middlecamera: Input six RGB-D camera looking horizantoally forward (d)\
 upcamera: Input six RGB-D camera looking upwards (e) \
 random: random mask \
@@ -90,8 +90,9 @@ name=mpft_suncg_pns_pns_twoview  maskType=twoview dataset=suncg dataPath=../data
 ```
 
 ### Depth encoding conversion
-See `./matlab_code/pano_io/pano_demo.m`. 
-It shows how to read the depth data and convert it into 3D point cloud.
+See `./matlab_code/pano_io/pano_demo.m`.  It shows how to \
+1) Compute the 3D pointcloud from depth representation. \
+2) Compute the 3D pointcloud from plane equation representation. \
 
 
 
